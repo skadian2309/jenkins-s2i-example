@@ -1,0 +1,149 @@
+Generic Cause
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/Webhook Triggers/jobs/IBM GHE/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins15599912939571153177.sh
++ echo git repo url is https://github.ibm.com/experiential-squads/ref-impl-1-1-estore-paymentservice.git
+git repo url is https://github.ibm.com/experiential-squads/ref-impl-1-1-estore-paymentservice.git
++ echo git repo name is ref-impl-1-1-estore-paymentservice
+git repo name is ref-impl-1-1-estore-paymentservice
++ echo git Email ID is
+git Email ID is
++ echo git Source Branch is master
+git Source Branch is master
++ MAIN_BRANCH=master
++ QA_BRANCH=qa
++ DEV_BRANCH=dev
++ SOURCE_ORG_NAME=experiential-squads
+++ echo
+++ sed s/@/-AT-/g
++ NAMESPACE_EMAILID=
++ NAMESPACE_LABEL=owner=
++ echo owner=
+owner=
+++ oc get project -l owner=
+++ awk '{if ($1!="NAME") print $1}'
+No resources found.
++ COMMITER_NAMESPACE=
+++ echo https://github.ibm.com/experiential-squads/ref-impl-1-1-estore-paymentservice.git
+++ sed 's/https:\/\///g'
++ git_base=github.ibm.com/experiential-squads/ref-impl-1-1-estore-paymentservice.git
++ pipeline_name=experiential-squads-ref-impl-1-1-estore-paymentservice
+++ echo experiential-squads-ref-impl-1-1-estore-paymentservice
+++ tr '[:upper:]' '[:lower:]'
++ pipeline_name=experiential-squads-ref-impl-1-1-estore-paymentservice
++ echo Pipeline Name is experiential-squads-ref-impl-1-1-estore-paymentservice
+Pipeline Name is experiential-squads-ref-impl-1-1-estore-paymentservice
++ rm -rf ref-impl-1-1-estore-paymentservice
++ git clone https://****@github.ibm.com/experiential-squads/ref-impl-1-1-estore-paymentservice.git
+Cloning into 'ref-impl-1-1-estore-paymentservice'...
++ wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -O jq
+--2020-03-18 04:03:27--  https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+Resolving github.com (github.com)... 140.82.112.3
+Connecting to github.com (github.com)|140.82.112.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/5101141/6387d980-de1f-11e8-8d3e-4455415aa408?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200318T040121Z&X-Amz-Expires=300&X-Amz-Signature=8cd106fcb19a822d5792a430f389f0c80b0de19779f12911a87bca7f199cfa4c&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Djq-linux64&response-content-type=application%2Foctet-stream [following]
+--2020-03-18 04:03:28--  https://github-production-release-asset-2e65be.s3.amazonaws.com/5101141/6387d980-de1f-11e8-8d3e-4455415aa408?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200318%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200318T040121Z&X-Amz-Expires=300&X-Amz-Signature=8cd106fcb19a822d5792a430f389f0c80b0de19779f12911a87bca7f199cfa4c&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Djq-linux64&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.109.155
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.109.155|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3953824 (3.8M) [application/octet-stream]
+Saving to: ‘jq’
+
+     0K .......... .......... .......... .......... ..........  1%  565K 7s
+    50K .......... .......... .......... .......... ..........  2%  564K 7s
+   100K .......... .......... .......... .......... ..........  3%  566K 7s
+   150K .......... .......... .......... .......... ..........  5% 30.1M 5s
+   200K .......... .......... .......... .......... ..........  6% 30.8M 4s
+   250K .......... .......... .......... .......... ..........  7%  584K 4s
+   300K .......... .......... .......... .......... ..........  9% 13.5M 4s
+   350K .......... .......... .......... .......... .......... 10% 73.6M 3s
+   400K .......... .......... .......... .......... .......... 11% 35.8M 3s
+   450K .......... .......... .......... .......... .......... 12% 22.4M 2s
+   500K .......... .......... .......... .......... .......... 14% 58.1M 2s
+   550K .......... .......... .......... .......... .......... 15%  586K 2s
+   600K .......... .......... .......... .......... .......... 16% 29.1M 2s
+   650K .......... .......... .......... .......... .......... 18% 23.0M 2s
+   700K .......... .......... .......... .......... .......... 19% 29.2M 2s
+   750K .......... .......... .......... .......... .......... 20% 46.6M 2s
+   800K .......... .......... .......... .......... .......... 22% 24.2M 2s
+   850K .......... .......... .......... .......... .......... 23% 46.0M 2s
+   900K .......... .......... .......... .......... .......... 24% 51.3M 1s
+   950K .......... .......... .......... .......... .......... 25% 58.8M 1s
+  1000K .......... .......... .......... .......... .......... 27% 73.1M 1s
+  1050K .......... .......... .......... .......... .......... 28% 87.1M 1s
+  1100K .......... .......... .......... .......... .......... 29% 59.5M 1s
+  1150K .......... .......... .......... .......... .......... 31% 36.0M 1s
+  1200K .......... .......... .......... .......... .......... 32%  654K 1s
+  1250K .......... .......... .......... .......... .......... 33% 29.0M 1s
+  1300K .......... .......... .......... .......... .......... 34% 61.9M 1s
+  1350K .......... .......... .......... .......... .......... 36% 31.1M 1s
+  1400K .......... .......... .......... .......... .......... 37% 27.1M 1s
+  1450K .......... .......... .......... .......... .......... 38% 33.0M 1s
+  1500K .......... .......... .......... .......... .......... 40%  144M 1s
+  1550K .......... .......... .......... .......... .......... 41%  157M 1s
+  1600K .......... .......... .......... .......... .......... 42%  137M 1s
+  1650K .......... .......... .......... .......... .......... 44%  142M 1s
+  1700K .......... .......... .......... .......... .......... 45% 62.9M 1s
+  1750K .......... .......... .......... .......... .......... 46% 66.8M 1s
+  1800K .......... .......... .......... .......... .......... 47% 20.6M 1s
+  1850K .......... .......... .......... .......... .......... 49% 21.0M 1s
+  1900K .......... .......... .......... .......... .......... 50% 31.8M 1s
+  1950K .......... .......... .......... .......... .......... 51% 88.9M 1s
+  2000K .......... .......... .......... .......... .......... 53% 85.8M 0s
+  2050K .......... .......... .......... .......... .......... 54% 80.6M 0s
+  2100K .......... .......... .......... .......... .......... 55% 80.6M 0s
+  2150K .......... .......... .......... .......... .......... 56% 94.9M 0s
+  2200K .......... .......... .......... .......... .......... 58% 89.7M 0s
+  2250K .......... .......... .......... .......... .......... 59% 82.7M 0s
+  2300K .......... .......... .......... .......... .......... 60%  743K 0s
+  2350K .......... .......... .......... .......... .......... 62% 62.7M 0s
+  2400K .......... .......... .......... .......... .......... 63% 74.3M 0s
+  2450K .......... .......... .......... .......... .......... 64%  129M 0s
+  2500K .......... .......... .......... .......... .......... 66% 93.3M 0s
+  2550K .......... .......... .......... .......... .......... 67% 80.2M 0s
+  2600K .......... .......... .......... .......... .......... 68% 91.2M 0s
+  2650K .......... .......... .......... .......... .......... 69% 97.7M 0s
+  2700K .......... .......... .......... .......... .......... 71%  107M 0s
+  2750K .......... .......... .......... .......... .......... 72% 74.0M 0s
+  2800K .......... .......... .......... .......... .......... 73%  138M 0s
+  2850K .......... .......... .......... .......... .......... 75%  115M 0s
+  2900K .......... .......... .......... .......... .......... 76% 37.0M 0s
+  2950K .......... .......... .......... .......... .......... 77%  169M 0s
+  3000K .......... .......... .......... .......... .......... 78% 49.9M 0s
+  3050K .......... .......... .......... .......... .......... 80% 98.9M 0s
+  3100K .......... .......... .......... .......... .......... 81% 84.3M 0s
+  3150K .......... .......... .......... .......... .......... 82% 77.7M 0s
+  3200K .......... .......... .......... .......... .......... 84%  127M 0s
+  3250K .......... .......... .......... .......... .......... 85%  109M 0s
+  3300K .......... .......... .......... .......... .......... 86% 96.3M 0s
+  3350K .......... .......... .......... .......... .......... 88% 83.1M 0s
+  3400K .......... .......... .......... .......... .......... 89%  121M 0s
+  3450K .......... .......... .......... .......... .......... 90% 98.5M 0s
+  3500K .......... .......... .......... .......... .......... 91%  114M 0s
+  3550K .......... .......... .......... .......... .......... 93% 90.4M 0s
+  3600K .......... .......... .......... .......... .......... 94% 47.7M 0s
+  3650K .......... .......... .......... .......... .......... 95% 86.4M 0s
+  3700K .......... .......... .......... .......... .......... 97% 85.4M 0s
+  3750K .......... .......... .......... .......... .......... 98% 76.3M 0s
+  3800K .......... .......... .......... .......... .......... 99%  214M 0s
+  3850K .......... .                                          100%  235M=0.6s
+
+2020-03-18 04:03:29 (5.85 MB/s) - ‘jq’ saved [3953824/3953824]
+
++ chmod 700 jq
++ cd ref-impl-1-1-estore-paymentservice
+++ ../jq -r .project_name devops/env.json
++ TARGET_PROJECT_NAME=ref-impl-1-1
++ '[' experiential-squads == experiential-squads ']'
++ case $SOURCE_BRANCH in
++ TARGET_PROJECT_NAME=ref-impl-1-1
++ DEVOPS_NAMESPACE=devops
++ oc project devops
+Already on project "devops" on server "https://172.21.0.1:443".
++ oc process -f devops/buildconfig_template.yaml SOURCE_REPOSITORY_URL=https://github.ibm.com/experiential-squads/ref-impl-1-1-estore-paymentservice.git COMPONENT_NAME=experiential-squads-ref-impl-1-1-estore-paymentservice NAMESPACE=ref-impl-1-1
++ oc apply -f-
+buildconfig.build.openshift.io/experiential-squads-ref-impl-1-1-estore-paymentservice unchanged
++ oc set build-hook bc/experiential-squads-ref-impl-1-1-estore-paymentservice --post-commit --command -- /bin/bash -c ls -ltr
++ oc start-build experiential-squads-ref-impl-1-1-estore-paymentservice
+build.build.openshift.io/experiential-squads-ref-impl-1-1-estore-paymentservice-21 started
+Finished: SUCCESS

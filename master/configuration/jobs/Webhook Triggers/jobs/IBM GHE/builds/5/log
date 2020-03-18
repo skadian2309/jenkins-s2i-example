@@ -1,0 +1,149 @@
+Generic Cause
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/Webhook Triggers/jobs/IBM GHE/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins3609642842917970662.sh
++ echo git repo url is https://github.ibm.com/experiential-squads/ref-impl-1-1-shipping.git
+git repo url is https://github.ibm.com/experiential-squads/ref-impl-1-1-shipping.git
++ echo git repo name is ref-impl-1-1-shipping
+git repo name is ref-impl-1-1-shipping
++ echo git Email ID is
+git Email ID is
++ echo git Source Branch is master
+git Source Branch is master
++ MAIN_BRANCH=master
++ QA_BRANCH=qa
++ DEV_BRANCH=dev
++ SOURCE_ORG_NAME=experiential-squads
+++ echo
+++ sed s/@/-AT-/g
++ NAMESPACE_EMAILID=
++ NAMESPACE_LABEL=owner=
++ echo owner=
+owner=
+++ oc get project -l owner=
+++ awk '{if ($1!="NAME") print $1}'
+No resources found.
++ COMMITER_NAMESPACE=
+++ echo https://github.ibm.com/experiential-squads/ref-impl-1-1-shipping.git
+++ sed 's/https:\/\///g'
++ git_base=github.ibm.com/experiential-squads/ref-impl-1-1-shipping.git
++ pipeline_name=experiential-squads-ref-impl-1-1-shipping
+++ echo experiential-squads-ref-impl-1-1-shipping
+++ tr '[:upper:]' '[:lower:]'
++ pipeline_name=experiential-squads-ref-impl-1-1-shipping
++ echo Pipeline Name is experiential-squads-ref-impl-1-1-shipping
+Pipeline Name is experiential-squads-ref-impl-1-1-shipping
++ rm -rf ref-impl-1-1-shipping
++ git clone https://****@github.ibm.com/experiential-squads/ref-impl-1-1-shipping.git
+Cloning into 'ref-impl-1-1-shipping'...
++ wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -O jq
+--2020-03-17 18:06:38--  https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+Resolving github.com (github.com)... 140.82.118.4
+Connecting to github.com (github.com)|140.82.118.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/5101141/6387d980-de1f-11e8-8d3e-4455415aa408?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200317%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200317T180501Z&X-Amz-Expires=300&X-Amz-Signature=9656e336a40d5bc03abadbc63d8106f548ac2ec344304c5842a370e60591dac0&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Djq-linux64&response-content-type=application%2Foctet-stream [following]
+--2020-03-17 18:06:38--  https://github-production-release-asset-2e65be.s3.amazonaws.com/5101141/6387d980-de1f-11e8-8d3e-4455415aa408?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200317%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200317T180501Z&X-Amz-Expires=300&X-Amz-Signature=9656e336a40d5bc03abadbc63d8106f548ac2ec344304c5842a370e60591dac0&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Djq-linux64&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.216.129.35
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.216.129.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3953824 (3.8M) [application/octet-stream]
+Saving to: ‘jq’
+
+     0K .......... .......... .......... .......... ..........  1%  587K 6s
+    50K .......... .......... .......... .......... ..........  2%  586K 6s
+   100K .......... .......... .......... .......... ..........  3%  572K 6s
+   150K .......... .......... .......... .......... ..........  5%  143M 5s
+   200K .......... .......... .......... .......... ..........  6% 42.8M 4s
+   250K .......... .......... .......... .......... ..........  7%  584K 4s
+   300K .......... .......... .......... .......... ..........  9% 27.4M 3s
+   350K .......... .......... .......... .......... .......... 10% 37.0M 3s
+   400K .......... .......... .......... .......... .......... 11%  196M 3s
+   450K .......... .......... .......... .......... .......... 12% 29.6M 2s
+   500K .......... .......... .......... .......... .......... 14%  199M 2s
+   550K .......... .......... .......... .......... .......... 15%  647K 2s
+   600K .......... .......... .......... .......... .......... 16% 14.0M 2s
+   650K .......... .......... .......... .......... .......... 18% 78.7M 2s
+   700K .......... .......... .......... .......... .......... 19% 54.5M 2s
+   750K .......... .......... .......... .......... .......... 20% 85.2M 2s
+   800K .......... .......... .......... .......... .......... 22% 56.5M 2s
+   850K .......... .......... .......... .......... .......... 23%  129M 1s
+   900K .......... .......... .......... .......... .......... 24% 98.5M 1s
+   950K .......... .......... .......... .......... .......... 25% 72.3M 1s
+  1000K .......... .......... .......... .......... .......... 27% 65.9M 1s
+  1050K .......... .......... .......... .......... .......... 28% 59.0M 1s
+  1100K .......... .......... .......... .......... .......... 29% 1.60M 1s
+  1150K .......... .......... .......... .......... .......... 31%  119M 1s
+  1200K .......... .......... .......... .......... .......... 32% 1.05M 1s
+  1250K .......... .......... .......... .......... .......... 33% 18.3M 1s
+  1300K .......... .......... .......... .......... .......... 34% 81.6M 1s
+  1350K .......... .......... .......... .......... .......... 36% 18.4M 1s
+  1400K .......... .......... .......... .......... .......... 37%  181M 1s
+  1450K .......... .......... .......... .......... .......... 38% 88.2M 1s
+  1500K .......... .......... .......... .......... .......... 40% 69.1M 1s
+  1550K .......... .......... .......... .......... .......... 41% 96.5M 1s
+  1600K .......... .......... .......... .......... .......... 42% 87.4M 1s
+  1650K .......... .......... .......... .......... .......... 44%  206M 1s
+  1700K .......... .......... .......... .......... .......... 45%  222M 1s
+  1750K .......... .......... .......... .......... .......... 46%  205M 1s
+  1800K .......... .......... .......... .......... .......... 47% 31.7M 1s
+  1850K .......... .......... .......... .......... .......... 49% 75.0M 1s
+  1900K .......... .......... .......... .......... .......... 50%  111M 1s
+  1950K .......... .......... .......... .......... .......... 51% 90.8M 0s
+  2000K .......... .......... .......... .......... .......... 53% 99.4M 0s
+  2050K .......... .......... .......... .......... .......... 54%  123M 0s
+  2100K .......... .......... .......... .......... .......... 55%  238M 0s
+  2150K .......... .......... .......... .......... .......... 56%  255M 0s
+  2200K .......... .......... .......... .......... .......... 58% 1.99M 0s
+  2250K .......... .......... .......... .......... .......... 59% 88.0M 0s
+  2300K .......... .......... .......... .......... .......... 60%  101M 0s
+  2350K .......... .......... .......... .......... .......... 62%  139M 0s
+  2400K .......... .......... .......... .......... .......... 63% 21.5M 0s
+  2450K .......... .......... .......... .......... .......... 64% 1.10M 0s
+  2500K .......... .......... .......... .......... .......... 66% 41.5M 0s
+  2550K .......... .......... .......... .......... .......... 67% 27.8M 0s
+  2600K .......... .......... .......... .......... .......... 68%  123M 0s
+  2650K .......... .......... .......... .......... .......... 69%  182M 0s
+  2700K .......... .......... .......... .......... .......... 71%  157M 0s
+  2750K .......... .......... .......... .......... .......... 72% 15.2M 0s
+  2800K .......... .......... .......... .......... .......... 73% 36.7M 0s
+  2850K .......... .......... .......... .......... .......... 75% 44.5M 0s
+  2900K .......... .......... .......... .......... .......... 76%  102M 0s
+  2950K .......... .......... .......... .......... .......... 77%  117M 0s
+  3000K .......... .......... .......... .......... .......... 78% 72.6M 0s
+  3050K .......... .......... .......... .......... .......... 80% 51.4M 0s
+  3100K .......... .......... .......... .......... .......... 81% 75.9M 0s
+  3150K .......... .......... .......... .......... .......... 82%  115M 0s
+  3200K .......... .......... .......... .......... .......... 84%  117M 0s
+  3250K .......... .......... .......... .......... .......... 85%  210M 0s
+  3300K .......... .......... .......... .......... .......... 86%  113M 0s
+  3350K .......... .......... .......... .......... .......... 88% 85.0M 0s
+  3400K .......... .......... .......... .......... .......... 89% 51.2M 0s
+  3450K .......... .......... .......... .......... .......... 90% 96.2M 0s
+  3500K .......... .......... .......... .......... .......... 91%  101M 0s
+  3550K .......... .......... .......... .......... .......... 93%  111M 0s
+  3600K .......... .......... .......... .......... .......... 94%  183M 0s
+  3650K .......... .......... .......... .......... .......... 95%  104M 0s
+  3700K .......... .......... .......... .......... .......... 97% 99.4M 0s
+  3750K .......... .......... .......... .......... .......... 98%  220M 0s
+  3800K .......... .......... .......... .......... .......... 99%  175M 0s
+  3850K .......... .                                          100%  311M=0.6s
+
+2020-03-17 18:06:39 (6.08 MB/s) - ‘jq’ saved [3953824/3953824]
+
++ chmod 700 jq
++ cd ref-impl-1-1-shipping
+++ ../jq -r .project_name devops/env.json
++ TARGET_PROJECT_NAME=ref-impl-1-1
++ '[' experiential-squads == experiential-squads ']'
++ case $SOURCE_BRANCH in
++ TARGET_PROJECT_NAME=ref-impl-1-1
++ DEVOPS_NAMESPACE=devops
++ oc project devops
+Already on project "devops" on server "https://172.21.0.1:443".
++ oc apply -f-
++ oc process -f devops/buildconfig_template.yaml SOURCE_REPOSITORY_URL=https://github.ibm.com/experiential-squads/ref-impl-1-1-shipping.git COMPONENT_NAME=experiential-squads-ref-impl-1-1-shipping NAMESPACE=ref-impl-1-1
+buildconfig.build.openshift.io/experiential-squads-ref-impl-1-1-shipping unchanged
++ oc set build-hook bc/experiential-squads-ref-impl-1-1-shipping --post-commit --command -- /bin/bash -c ls -ltr
++ oc start-build experiential-squads-ref-impl-1-1-shipping
+build.build.openshift.io/experiential-squads-ref-impl-1-1-shipping-2 started
+Finished: SUCCESS

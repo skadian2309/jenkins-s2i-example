@@ -1,0 +1,386 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>2.204.2</version>
+  <installStateName>RESTART</installStateName>
+  <numExecutors>5</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.UseItem:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.UseItem:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.UseItem:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.UseOwn:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.UseOwn:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.UseOwn:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.Build:admin</permission>
+    <permission>hudson.model.Computer.Build:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.Build:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.Configure:admin</permission>
+    <permission>hudson.model.Computer.Configure:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.Configure:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.Connect:admin</permission>
+    <permission>hudson.model.Computer.Connect:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.Connect:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.Create:admin</permission>
+    <permission>hudson.model.Computer.Create:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.Create:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.Delete:admin</permission>
+    <permission>hudson.model.Computer.Delete:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.Delete:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.Disconnect:admin</permission>
+    <permission>hudson.model.Computer.Disconnect:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.Disconnect:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.ExtendedRead:admin</permission>
+    <permission>hudson.model.Computer.ExtendedRead:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.ExtendedRead:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Computer.Provision:admin</permission>
+    <permission>hudson.model.Computer.Provision:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Computer.Provision:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Hudson.Administer:admin</permission>
+    <permission>hudson.model.Hudson.Administer:IAM#mattholm@uk.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Hudson.Administer:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Hudson.Administer:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:admin</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Hudson.Read:admin</permission>
+    <permission>hudson.model.Hudson.Read:IAM#mattholm@uk.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Hudson.Read:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Hudson.Read:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Hudson.RunScripts:admin</permission>
+    <permission>hudson.model.Hudson.RunScripts:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Hudson.RunScripts:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:admin</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Build:admin</permission>
+    <permission>hudson.model.Item.Build:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Build:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Cancel:admin</permission>
+    <permission>hudson.model.Item.Cancel:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Cancel:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Configure:admin</permission>
+    <permission>hudson.model.Item.Configure:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Configure:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Create:admin</permission>
+    <permission>hudson.model.Item.Create:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Create:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Delete:admin</permission>
+    <permission>hudson.model.Item.Delete:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Delete:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Discover:admin</permission>
+    <permission>hudson.model.Item.Discover:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Discover:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.ExtendedRead:admin</permission>
+    <permission>hudson.model.Item.ExtendedRead:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.ExtendedRead:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Move:admin</permission>
+    <permission>hudson.model.Item.Move:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Move:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Read:admin</permission>
+    <permission>hudson.model.Item.Read:IAM#mattholm@uk.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Read:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Read:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Item.Workspace:admin</permission>
+    <permission>hudson.model.Item.Workspace:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Item.Workspace:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Run.Delete:admin</permission>
+    <permission>hudson.model.Run.Delete:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Run.Delete:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Run.Replay:admin</permission>
+    <permission>hudson.model.Run.Replay:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Run.Replay:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.Run.Update:admin</permission>
+    <permission>hudson.model.Run.Update:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.Run.Update:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.View.Configure:admin</permission>
+    <permission>hudson.model.View.Configure:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.View.Configure:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.View.Create:admin</permission>
+    <permission>hudson.model.View.Create:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.View.Create:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.View.Delete:admin</permission>
+    <permission>hudson.model.View.Delete:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.View.Delete:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.model.View.Read:admin</permission>
+    <permission>hudson.model.View.Read:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.model.View.Read:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.scm.SCM.Tag:admin</permission>
+    <permission>hudson.scm.SCM.Tag:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.scm.SCM.Tag:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.security.Permission.FullControl:admin</permission>
+    <permission>hudson.security.Permission.FullControl:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.security.Permission.FullControl:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.security.Permission.GenericConfigure:admin</permission>
+    <permission>hudson.security.Permission.GenericConfigure:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.security.Permission.GenericConfigure:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.security.Permission.GenericCreate:admin</permission>
+    <permission>hudson.security.Permission.GenericCreate:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.security.Permission.GenericCreate:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.security.Permission.GenericDelete:admin</permission>
+    <permission>hudson.security.Permission.GenericDelete:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.security.Permission.GenericDelete:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.security.Permission.GenericRead:admin</permission>
+    <permission>hudson.security.Permission.GenericRead:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.security.Permission.GenericRead:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.security.Permission.GenericUpdate:admin</permission>
+    <permission>hudson.security.Permission.GenericUpdate:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.security.Permission.GenericUpdate:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>hudson.security.Permission.GenericWrite:admin</permission>
+    <permission>hudson.security.Permission.GenericWrite:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>hudson.security.Permission.GenericWrite:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:IAM#sandhya.pailwar@in.ibm.com-view-edit</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:IAM#sumit.kadian@in.ibm.com-view-appops-customrole-v2-edit-admin</permission>
+  </authorizationStrategy>
+  <securityRealm class="org.openshift.jenkins.plugins.openshiftlogin.OpenShiftOAuth2SecurityRealm" plugin="openshift-login@1.0.22">
+    <defaultedServiceAccountDirectory>/run/secrets/kubernetes.io/serviceaccount</defaultedServiceAccountDirectory>
+    <defaultedServiceAccountName>jenkins</defaultedServiceAccountName>
+    <defaultedServerPrefix>https://kubernetes.default:443</defaultedServerPrefix>
+    <defaultedRedirectURL>https://c100-e.eu-de.containers.cloud.ibm.com:30824</defaultedRedirectURL>
+    <defaultedClientId>system:serviceaccount:devops:jenkins</defaultedClientId>
+    <defaultedClientSecret>eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZXZvcHMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiamVua2lucy10b2tlbi1ycXQ0eCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJqZW5raW5zIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMTI3NWE3ZDgtNTZmMi0xMWVhLWI3MDEtNjIwMmQ4M2Y5YTAxIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmRldm9wczpqZW5raW5zIn0.xNk5MalVngY_9iPwK7K2Wry6OFIHa3WDA9IEt93iKTGyV-lPwYouIT-nt7seFazyuZ3kSt-MKo1fcCM4U6d5vxe7QuNKoYNA34HFNj2t9Je_apWzrBIJqccTHiPBvKAWs3_RvK15gAZ3iql5sFKlmHul13IzwRdDox5LBV1NB2RhG0b57q9YVA16X_ossI5-8rwnwDUZ8sx4MtmfcaU5hmOjp30EuWx2ctzaDZwSeVmfeHquxqzcH84tN4d9cBS-oBag2EVwmqfpo50eIOuLy49kb8ZdDsxB3kV2hVfNV1Z7m9BxuJv9tfjc0yQDKqiKbEjeN6bX3KezlORE-gwNFQ</defaultedClientSecret>
+    <namespace>devops</namespace>
+    <provider>
+      <issuer>https://c100-e.eu-de.containers.cloud.ibm.com:30824</issuer>
+      <authorization__endpoint>https://c100-e.eu-de.containers.cloud.ibm.com:30824/oauth/authorize</authorization__endpoint>
+      <token__endpoint>https://c100-e.eu-de.containers.cloud.ibm.com:30824/oauth/token</token__endpoint>
+    </provider>
+    <filter/>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud plugin="kubernetes@1.18.2">
+      <name>openshift</name>
+      <defaultsProviderTemplate></defaultsProviderTemplate>
+      <templates>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>maven</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>maven</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>NORMAL</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker-registry.default.svc:5000/devops/jenkins-agent-maven-35-rhel7</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+        <org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+          <inheritFrom></inheritFrom>
+          <name>nodejs</name>
+          <namespace></namespace>
+          <privileged>false</privileged>
+          <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+          <alwaysPullImage>false</alwaysPullImage>
+          <instanceCap>2147483647</instanceCap>
+          <slaveConnectTimeout>100</slaveConnectTimeout>
+          <idleMinutes>0</idleMinutes>
+          <activeDeadlineSeconds>0</activeDeadlineSeconds>
+          <label>nodejs</label>
+          <serviceAccount>jenkins</serviceAccount>
+          <nodeSelector></nodeSelector>
+          <nodeUsageMode>NORMAL</nodeUsageMode>
+          <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <workspaceVolume class="org.csanchez.jenkins.plugins.kubernetes.volumes.workspace.EmptyDirWorkspaceVolume">
+            <memory>false</memory>
+          </workspaceVolume>
+          <volumes/>
+          <containers>
+            <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+              <name>jnlp</name>
+              <image>docker-registry.default.svc:5000/openshift/jenkins-agent-maven-35-rhel7</image>
+              <privileged>false</privileged>
+              <alwaysPullImage>true</alwaysPullImage>
+              <workingDir>/tmp</workingDir>
+              <command></command>
+              <args>${computer.jnlpmac} ${computer.name}</args>
+              <ttyEnabled>false</ttyEnabled>
+              <resourceRequestCpu></resourceRequestCpu>
+              <resourceRequestMemory></resourceRequestMemory>
+              <resourceLimitCpu></resourceLimitCpu>
+              <resourceLimitMemory></resourceLimitMemory>
+              <envVars/>
+              <ports/>
+              <livenessProbe>
+                <execArgs></execArgs>
+                <timeoutSeconds>0</timeoutSeconds>
+                <initialDelaySeconds>0</initialDelaySeconds>
+                <failureThreshold>0</failureThreshold>
+                <periodSeconds>0</periodSeconds>
+                <successThreshold>0</successThreshold>
+              </livenessProbe>
+            </org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
+          </containers>
+          <envVars>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>http_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>https_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+            <org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+              <key>no_proxy</key>
+            </org.csanchez.jenkins.plugins.kubernetes.model.KeyValueEnvVar>
+          </envVars>
+          <annotations/>
+          <imagePullSecrets/>
+          <nodeProperties/>
+          <yamlMergeStrategy class="org.csanchez.jenkins.plugins.kubernetes.pod.yaml.Overrides"/>
+          <showRawYaml>true</showRawYaml>
+          <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Default"/>
+        </org.csanchez.jenkins.plugins.kubernetes.PodTemplate>
+      </templates>
+      <serverUrl>https://172.21.0.1:443</serverUrl>
+      <serverCertificate>-----BEGIN CERTIFICATE-----
+MIIFOzCCAyOgAwIBAgIUCllf11XPm5JyeGjIm4kmWgteDVswDQYJKoZIhvcNAQEL
+BQAwLTErMCkGA1UEAwwiYnA5cHZ0ZGYwanJwY2xiM2VvN2cta3ViZXJuZXRlcy1j
+YTAeFw0yMDAyMjQxMDA2MjZaFw00NzA3MTIxMDA2MjZaMC0xKzApBgNVBAMMImJw
+OXB2dGRmMGpycGNsYjNlbzdnLWt1YmVybmV0ZXMtY2EwggIiMA0GCSqGSIb3DQEB
+AQUAA4ICDwAwggIKAoICAQC4STv5pnHsP70fIR2McCw16bZIcyMYk0fSGcZkBvv/
+0ZgEi4sLjzZyYg2rMJMWECSlHTzBKQ0D2OnC7eNSdjO0XfYKhIpEODJMkaEz+VQm
+5s+GSF5qqqz2SIO/xYe68OBRy3X6WLpIpAW+dcXrAxXuW7dVlnQtoZsATQbPqin+
+I7aAp1YM/TaOM9/u9zc4gREi3CoFwIaKp3J7aczunh7iW+BgVebZTUR28WI4nlRK
+qxJ/Nou7p8mrwS/QZob7lriny4SWq55PoQDveolgHh/NeqhyLAvftbEvjf1zLWHm
+ArVzn2dG5pbWsBMqnDiKaxHWsbQWCWbj0IH/BQ4iUnPBnDRQbEQsrVjHFto+U48V
+RoJn6rg6RoP0HJ/QP/KJGsKKOrXLjBhnqGpqy00EOAhajbMhFFqxGUg0aFHZx5Sp
+xONFip4Tv7k5oKibdE8R+f7K1gS+LQVhHUdcyX/Mr+bOrDCPt2E/WXA66vesOWzo
+usnAfGfRRoGJTmD1dmznjhxXmJOvRrzqJjZmeQDew4a1Nvt06VsweUfmk3W8t35q
+nhVrsGgq8aIU895gIz6cyAx8GFaLSSNBxUvAVINriV1I/RMSJho88wkVaUry7zCu
+Oe5Odf8c9FjTxUUfgYfrJkav8V3Q3Plr3Pt6P05RKEcl6TwnTNIE+mpg7kk+qORp
+rwIDAQABo1MwUTAdBgNVHQ4EFgQUzWhz63woxw3cwwvfd62troAftXgwHwYDVR0j
+BBgwFoAUzWhz63woxw3cwwvfd62troAftXgwDwYDVR0TAQH/BAUwAwEB/zANBgkq
+hkiG9w0BAQsFAAOCAgEAt73984CBnOyAh1mXWxv45B2FoH9pk7acbc9ut8PuS6Wk
+sEacStKW9YPj6an/sLtN16fCzf2rZ5ahQQqVriJj+6XwLm1LzCKBBT+XC3YvNVuy
+ldy7Q4dLP8/F8Jc8cV+45APriKfLPmwpRVMmQPzKeduA7qLZRO1pN7NjrrgfQAAh
+nQLkwrBNBApGpChohJXyxNupDpf8hiXzMXP3uWJvEJu8H5ymDa8AgjDtS+W6M6W1
+/vAjHyIaz8243N+p2i/KbLYLx1jCtr0q0VNYW3XMjWyK4sxQpQD2sNuoRmp3F9K2
+ARW1WBTHV/3hrupXWFlYRJSm3eW8Fx2HZTQ8cJ/VA6RerXrr6fkhQfKGysSRqvl+
+bwZWTrx0hATyEjG8vNqTyiiBuajhlYQ2gEGbWOl84YyyNsDm9idka3eJIVKPZjb5
+eLHnEk2u9CJeUfoksgQOSEU2n5yCtjGMQsLQFDg+fGpsFKxvLiTmFPooJ972Ypam
+n5EIrBJTolFpvlt5fjaJq3H/oY+w+4CTGqFecgiN2Qqjk4C+oiYSkHcQj9OIPGV4
+mNud+gUgoWV2ygKoxWugJ67HPk2f9WhDigqweEdCaOL10xiAeMzDhxVlCjFk0OPm
+9DvaKuOn6AHp4Gq+bKl5KiZPhsVuK7NgcinsKfqX1uih54oW0FDYdKB+CdGQH/I=
+-----END CERTIFICATE-----</serverCertificate>
+      <skipTlsVerify>false</skipTlsVerify>
+      <addMasterProxyEnvVars>true</addMasterProxyEnvVars>
+      <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
+      <namespace>devops</namespace>
+      <jenkinsUrl>http://172.21.44.30:80</jenkinsUrl>
+      <jenkinsTunnel>172.21.200.48:50000</jenkinsTunnel>
+      <containerCap>100</containerCap>
+      <retentionTimeout>5</retentionTimeout>
+      <connectTimeout>0</connectTimeout>
+      <readTimeout>0</readTimeout>
+      <podLabels>
+        <org.csanchez.jenkins.plugins.kubernetes.PodLabel>
+          <key>jenkins</key>
+          <value>slave</value>
+        </org.csanchez.jenkins.plugins.kubernetes.PodLabel>
+      </podLabels>
+      <usageRestricted>false</usageRestricted>
+      <maxRequestsPerHost>32</maxRequestsPerHost>
+      <waitForPodSec>600</waitForPodSec>
+      <podRetention class="org.csanchez.jenkins.plugins.kubernetes.pod.retention.Never"/>
+    </org.csanchez.jenkins.plugins.kubernetes.KubernetesCloud>
+  </clouds>
+  <quietPeriod>1</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>50000</slaveAgentPort>
+  <disabledAgentProtocols>
+    <string>JNLP-connect</string>
+    <string>JNLP2-connect</string>
+  </disabledAgentProtocols>
+  <label>master</label>
+  <nodeProperties/>
+  <globalNodeProperties/>
+  <noUsageStatistics>true</noUsageStatistics>
+</hudson>
