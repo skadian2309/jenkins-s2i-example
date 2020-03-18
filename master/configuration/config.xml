@@ -203,7 +203,7 @@
           <containers>
             <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
               <name>jnlp</name>
-              <image>docker-registry.default.svc:5000/devops/jenkins-agent-maven-35-rhel7</image>
+	      <image>docker.io/openshift/jenkins-agent-maven-35-centos7:v3.11</image>
               <privileged>false</privileged>
               <alwaysPullImage>true</alwaysPullImage>
               <workingDir>/tmp</workingDir>
