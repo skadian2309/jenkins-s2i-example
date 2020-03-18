@@ -1,2 +1,2 @@
-generic-webhook-trigger@latest
-sonar@latest
+generic-webhook-trigger
+sonar

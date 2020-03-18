@@ -344,8 +344,8 @@ mNud+gUgoWV2ygKoxWugJ67HPk2f9WhDigqweEdCaOL10xiAeMzDhxVlCjFk0OPm
       <addMasterProxyEnvVars>true</addMasterProxyEnvVars>
       <capOnlyOnAlivePods>false</capOnlyOnAlivePods>
       <namespace>devops</namespace>
-      <jenkinsUrl>http://172.21.44.30:80</jenkinsUrl>
-      <jenkinsTunnel>172.21.200.48:50000</jenkinsTunnel>
+      <jenkinsUrl>http://jenkins:80</jenkinsUrl>
+      <jenkinsTunnel>jenkins-jnlp:50000</jenkinsTunnel>
       <containerCap>100</containerCap>
       <retentionTimeout>5</retentionTimeout>
       <connectTimeout>0</connectTimeout>
