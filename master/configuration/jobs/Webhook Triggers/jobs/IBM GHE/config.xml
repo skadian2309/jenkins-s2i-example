@@ -108,7 +108,7 @@ pipeline_name=&quot;$org_name&quot;-&quot;$repo_name&quot;
 pipeline_name=$(echo $pipeline_name | tr &apos;[:upper:]&apos; &apos;[:lower:]&apos;)
 echo Pipeline Name is $pipeline_name
 
-rm -rf $repo_name 2&gt; /dev/null 
+rm -rf $repo_name 2&gt; /dev/null
 
 git clone https://${git_token}@$git_base
 
@@ -126,7 +126,7 @@ TARGET_PROJECT_NAME=`../jq -r &apos;.project_name&apos; devops/env.json`
 commiternamespace()
 {
 
-  ##Changinig namespace in env.json 
+  ##Changinig namespace in env.json
   ENV_NAMESPACE=`../jq  -r &apos;.project_name&apos; devops/env.json`
   sed -i &quot;s/$ENV_NAMESPACE/$COMMITER_NAMESPACE/g&quot; devops/env.json
   TMP_NAMESPACE=`../jq  -r &apos;.project_name&apos; devops/env.json`
@@ -137,12 +137,12 @@ commiternamespace()
 
 targetnamespace()
 {
-  ##Changinig namespace in env.json 
+  ##Changinig namespace in env.json
   ENV_NAMESPACE=`../jq  -r &apos;.project_name&apos; devops/env.json`
   sed -i &quot;s/$ENV_NAMESPACE/$TARGET_PROJECT_NAME/g&quot; devops/env.json
   TMP_NAMESPACE=`../jq  -r &apos;.project_name&apos; devops/env.json`
   echo &quot;Deploying Application in the namespace $TMP_NAMESPACE&quot;
- 
+
 
 }
 
@@ -157,22 +157,22 @@ if [ &quot;$SOURCE_ORG_NAME&quot; == &quot;$org_name&quot;  ];then
 case $SOURCE_BRANCH in
 
   $MAIN_BRANCH)
- 
+
    TARGET_PROJECT_NAME=${TARGET_PROJECT_NAME}
    ;;
- 
+
   $QA_BRANCH)
- 
+
    TARGET_PROJECT_NAME=${TARGET_PROJECT_NAME}-${SOURCE_BRANCH}
    targetnamespace
    ;;
- 
+
   $DEV_BRANCH)
 
    TARGET_PROJECT_NAME=${TARGET_PROJECT_NAME}-${SOURCE_BRANCH}
    targetnamespace
    ;;
-   
+
    *)
 
    TARGET_PROJECT_NAME=$COMMITER_NAMESPACE
@@ -180,7 +180,7 @@ case $SOURCE_BRANCH in
    commiternamespace
     ;;
  esac
- 
+
 
 
 else
@@ -188,9 +188,9 @@ else
   commiternamespace
 
 
- 
-fi 
- 
+
+fi
+
 
 
 
@@ -201,7 +201,7 @@ DEVOPS_NAMESPACE=&quot;devops&quot;
 oc project $DEVOPS_NAMESPACE
 
 
-oc process -f devops/buildconfig_template.yaml SOURCE_REPOSITORY_URL=$GitURL COMPONENT_NAME=$pipeline_name NAMESPACE=&quot;$TARGET_PROJECT_NAME&quot; | oc apply -f-  
+oc process -f devops/buildconfig_template.yaml SOURCE_REPOSITORY_URL=$GitURL COMPONENT_NAME=$pipeline_name NAMESPACE=&quot;$TARGET_PROJECT_NAME&quot; | oc apply -f-
 oc set build-hook bc/$pipeline_name --post-commit --command -- /bin/bash -c ls -ltr
 oc start-build $pipeline_name</command>
     </hudson.tasks.Shell>
@@ -211,7 +211,7 @@ oc start-build $pipeline_name</command>
     <org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper plugin="credentials-binding@1.15">
       <bindings>
         <org.jenkinsci.plugins.credentialsbinding.impl.UsernamePasswordBinding>
-          <credentialsId>git_pass</credentialsId>
+          <credentialsId>devops-ref-impl-2-1-estore</credentialsId>
           <variable>git_token</variable>
         </org.jenkinsci.plugins.credentialsbinding.impl.UsernamePasswordBinding>
       </bindings>
